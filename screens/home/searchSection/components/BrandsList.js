@@ -3,14 +3,14 @@ import { brands } from "../../../../data/brands";
 import BrandItem from "./BrandItem";
 import { spaces } from "../../../../constants/spaces";
 import { useState } from "react";
-import ItemHorizontalSeparator from "./ItemHorizontalSeparator";
+import ItemSeparator from "../../../../ui-components/ItemSeparator";
 
 export default function BrandsList() {
   const [selectedBrand, setSelectedBrand] = useState("nike");
   return (
     <FlatList
       style={styles.listContainer}
-      ItemSeparatorComponent={ItemHorizontalSeparator}
+      ItemSeparatorComponent={<ItemSeparator width={spaces.S}/>}
       showsHorizontalScrollIndicator={false}
       contentContainerStyle={styles.contentStyle}
       horizontal

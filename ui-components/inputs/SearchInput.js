@@ -3,7 +3,7 @@ import { colors } from "../../constants/colors";
 import { spaces } from "../../constants/spaces";
 import { radius } from "../../constants/radius";
 import { textSize } from "../../constants/textSize";
-import EvilIcons from "@react-native-vector-icons/evil-icons";
+import { EvilIcons } from "@expo/vector-icons";
 
 export default function SearchInput({ placeholder, value, onChangeText }) {
   return (
