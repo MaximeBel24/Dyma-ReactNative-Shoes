@@ -1,6 +1,6 @@
 import { StyleSheet, Text } from "react-native";
 import { textSize } from "../../constants/textSize";
-import { colors } from "../../constants/color";
+import { colors } from "../../constants/colors";
 
 const TextBoldXL = ({ children, blue = false }) => {
   return (

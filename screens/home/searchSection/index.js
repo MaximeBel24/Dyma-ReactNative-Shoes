@@ -20,7 +20,6 @@ export default function SearchSection() {
 
 const styles = StyleSheet.create({
   conatainer: {
-    borderWidth: 1,
     flex: 120,
     paddingTop: spaces.S,
     justifyContent: "space-evenly"

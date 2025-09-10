@@ -1,16 +1,21 @@
 import { View, StyleSheet } from "react-native";
 import Banner from "../components/Banner";
 import { spaces } from "../../../constants/spaces";
+import { shoes } from "../../../data/shoes";
+import HorizontalCard from "./components/HorizontalCard";
 
 export default function NewsSection() {
-  return <View style={styles.container}>
-    <Banner text="Nouveautés" />
-  </View>;
+  const item = shoes[0].stock.find((elem) => elem.new);
+  return (
+    <View style={styles.container}>
+      <Banner text="Nouveautés" />
+      <HorizontalCard item={item} />
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
   container: {
-    borderWidth: 1,
     flex: 160,
     paddingVertical: spaces.M,
   },
